@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main2Activity"
+    android:id="@+id/imageView1_am2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pytanie 2:"
+        android:textColor="#872732"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/textView_am2"
+        android:layout_alignParentStart="true"
+        android:maxLength="50"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gdzie zlokalizowany jest Zamek Książ? "
+        android:id="@+id/textView2_am2"
+        android:textColor="#cb4655"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_below="@+id/textView_am2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_am2"
+        android:scaleType="fitStart"
+        android:src="@drawable/imagesecond"
+        android:layout_below="@+id/textView2_am2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W okolicach Malborka"
+        android:id="@+id/button_am2"
+        android:layout_alignBottom="@+id/imageView_am2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W Wielkopolsce"
+        android:id="@+id/button2_am2"
+        android:layout_alignBottom="@+id/imageView_am2"
+        android:layout_alignStart="@+id/button_am2"
+        android:layout_marginBottom="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W Wałbrzychu"
+        android:id="@+id/button3_am2"
+        android:layout_alignBottom="@+id/imageView_am2"
+        android:layout_alignStart="@+id/button2_am2"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
