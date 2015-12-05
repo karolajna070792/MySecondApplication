@@ -82,4 +82,19 @@
         android:layout_alignParentStart="true"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kliknij proszę na odpowiedź! "
+        android:id="@+id/textView3_am2"
+        android:textColor="#cb4655"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageView_am2"
+        android:layout_centerHorizontal="true" />
+
+
+
 </RelativeLayout>

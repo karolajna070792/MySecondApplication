@@ -95,11 +95,6 @@
         android:textStyle="bold"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:autoText="false"
-        android:clickable="false"
-        android:contextClickable="false"
-        android:editable="false"
-        android:elegantTextHeight="false"
         android:gravity="center" />
 
 </RelativeLayout>
