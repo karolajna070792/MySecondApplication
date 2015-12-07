@@ -24,6 +24,14 @@
         </activity>
         <activity android:name=".Main4Activity" >
         </activity>
+        <activity android:name=".Main5Activity" >
+        </activity>
+        <activity android:name=".Main6Activity" >
+        </activity>
+        <activity android:name=".Main7Activity" >
+        </activity>
+        <activity android:name=".Main8Activity" >
+        </activity>
     </application>
 
 </manifest>
