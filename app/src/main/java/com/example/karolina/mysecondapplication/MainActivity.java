@@ -1,26 +1,44 @@
 package com.example.karolina.mysecondapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.content.Intent;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends Activity
 {
-
-    View.OnClickListener handler = new View.OnClickListener()
+    public void onCreate(Bundle savedInstanceState)
     {
-        public void onClick(View v)
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
+            addListenerOnButton();
+    }
+
+    public void addListenerOnButton() {
+
+        final Context context = this;
+
+        Button button = (Button) findViewById(R.id.button_am3);
+
+        button.setOnClickListener(new View.OnClickListener()
 
         {
+            public void onClick(View arg0)
+            {
+
+                Intent intent = new Intent(context, Main3Activity.class);
+                startActivity(intent);
+
+            }
+
+            });
 
         }
-
-    };
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 }
+
+
+
+
