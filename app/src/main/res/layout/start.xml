@@ -6,7 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.karolina.mysecondapplication.MainActivity">
+    tools:context="com.example.karolina.mysecondapplication.Start">
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ROZPOCZNIJ!"
-        android:id="@+id/button_am3"
+        android:id="@+id/rozpocznij_btn"
         android:textColor="#f41515"
         android:textStyle="bold"
         android:layout_alignWithParentIfMissing="false"

@@ -3,11 +3,11 @@ package com.example.karolina.mysecondapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Main8Activity extends AppCompatActivity {
+public class Question_3_Analize extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main8);
+        setContentView(R.layout.question_3_analize);
     }
 }

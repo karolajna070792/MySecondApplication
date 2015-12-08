@@ -7,12 +7,12 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
 
-public class MainActivity extends Activity
+public class Start extends Activity
 {
     public void onCreate(Bundle savedInstanceState)
     {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.start);
 
             addListenerOnButton();
     }
@@ -21,20 +21,19 @@ public class MainActivity extends Activity
 
         final Context context = this;
 
-        Button button = (Button) findViewById(R.id.button_am3);
+        Button rozpocznij = (Button) findViewById(R.id.rozpocznij_btn);
 
-        button.setOnClickListener(new View.OnClickListener()
+        rozpocznij.setOnClickListener(new View.OnClickListener()
 
         {
-            public void onClick(View arg0)
-            {
+            public void onClick(View arg0) {
 
-                Intent intent = new Intent(context, Main3Activity.class);
+                Intent intent = new Intent(context, Question1.class);
                 startActivity(intent);
 
             }
 
-            });
+        });
 
         }
 }

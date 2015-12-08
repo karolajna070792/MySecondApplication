@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="MainActivity" >
+        <activity android:name=".Start" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,21 +16,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".Question2"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".Main3Activity" >
+        <activity android:name=".Question1" >
         </activity>
-        <activity android:name=".Main4Activity" >
+        <activity android:name=".Question3" >
         </activity>
-        <activity android:name=".Main5Activity" >
+        <activity android:name=".Start_Analize" >
         </activity>
-        <activity android:name=".Main6Activity" >
+        <activity android:name=".Question_1_Analize" >
         </activity>
-        <activity android:name=".Main7Activity" >
+        <activity android:name=".Question_2_Analize" >
         </activity>
-        <activity android:name=".Main8Activity" >
+        <activity android:name=".Question_3_Analize" >
         </activity>
     </application>
 

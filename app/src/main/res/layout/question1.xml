@@ -8,18 +8,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".Main2Activity"
-    android:id="@+id/imageView1_am2">
+    tools:context=".MainActivity"
+    android:id="@+id/imageView1">
 
-    <TextView
+    <TextView android:text="Pytanie1: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Pytanie 2:"
+        android:id="@+id/Question"
         android:textColor="#872732"
         android:textSize="17dp"
         android:textStyle="bold"
-        android:id="@+id/textView_am7"
         android:layout_alignParentStart="true"
         android:maxLength="50"
         android:layout_alignParentEnd="false" />
@@ -28,30 +26,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Gdzie zlokalizowany jest Zamek Książ? "
-        android:id="@+id/textView2_am7"
+        android:text="Jaki obiekt przedstawiony jest na obrazku?"
+        android:id="@+id/Question1"
+        android:layout_below="@+id/Question"
         android:textColor="#cb4655"
         android:textStyle="bold"
         android:textSize="17dp"
-        android:layout_below="@+id/textView_am7"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView_am7"
+        android:id="@+id/imageView2"
+        android:src="@drawable/imageone"
         android:scaleType="fitStart"
-        android:src="@drawable/imagesecond"
-        android:layout_below="@+id/textView2_am7"
+        android:layout_below="@+id/Question1"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W okolicach Malborka"
-        android:id="@+id/button_am7"
-        android:layout_alignBottom="@+id/imageView_am7"
+        android:text="Zamek Czocha"
+        android:id="@+id/zamek_czocha_btn"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="140dp"
         android:layout_alignParentEnd="true"
@@ -61,10 +60,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W Wielkopolsce"
-        android:id="@+id/button2_am7"
-        android:layout_alignBottom="@+id/imageView_am7"
-        android:layout_alignStart="@+id/button_am7"
+        android:text="Zamek Książ"
+        android:id="@+id/zamek_ksiaz_btn"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignEnd="@+id/zamek_czocha_btn"
         android:layout_marginBottom="90dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
@@ -73,28 +72,29 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W Wałbrzychu"
-        android:id="@+id/button3_am7"
-        android:layout_alignBottom="@+id/imageView_am7"
-        android:layout_alignStart="@+id/button2_am7"
+        android:text="Pałac Moszna"
+        android:id="@+id/palac_moszna_btn"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignStart="@+id/zamek_ksiaz_btn"
         android:layout_marginBottom="40dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:textStyle="bold" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nastepna odpowiedz"
-        android:id="@+id/button4_am7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kliknij proszę na odpowiedź! "
+        android:id="@+id/Command"
+        android:textColor="#cb4655"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:textSize="20dp"
         android:textStyle="bold"
-        android:background="#dd5375"
-        android:gravity="center"
-        android:textSize="12dp"
-        android:paddingLeft="12dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/imageView_am7" />
-
-
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
 
 </RelativeLayout>
