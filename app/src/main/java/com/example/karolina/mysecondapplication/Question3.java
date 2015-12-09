@@ -2,12 +2,14 @@ package com.example.karolina.mysecondapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class Question3 extends AppCompatActivity {
+    public final static int ID = 2;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -26,40 +28,29 @@ public class Question3 extends AppCompatActivity {
         Button na_poczatku = (Button) findViewById(R.id.na_poczatku_wieku_btn);
         Button na_przelomie = (Button) findViewById(R.id.na_przelomie_btn);
 
-        w_latach.setOnClickListener(new View.OnClickListener()
+
+        if(State.zaznaczone[ID] != null){
+            Button zaznaczony = (Button)findViewById(State.zaznaczone[ID]);
+            zaznaczony.setBackgroundColor(Color.RED);
+            w_latach.setTextColor(Color.GREEN);
+        }
+
+        View.OnClickListener clickListener = new View.OnClickListener()
 
         {
-            public void onClick(View arg0) {
-
+            public void onClick(View v) {
+                State.zaznaczone[ID]=v.getId();
                 Intent intent = new Intent(context, Start_Analize.class);
                 startActivity(intent);
 
             }
 
-        });
-
-        na_poczatku.setOnClickListener(new View.OnClickListener() {
+        };
 
 
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(context, Start_Analize.class);
-                startActivity(intent2);
-
-            }
-        });
-
-
-        na_przelomie.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(context, Start_Analize.class);
-                startActivity(intent3);
-
-            }
-        });
+        w_latach.setOnClickListener(clickListener);
+        na_poczatku.setOnClickListener(clickListener);
+        na_przelomie.setOnClickListener(clickListener);
     }
 
 }

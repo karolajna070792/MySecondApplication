@@ -1,5 +1,6 @@
 package com.example.karolina.mysecondapplication;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -10,6 +11,8 @@ import android.widget.Button;
 
 public class Question2 extends AppCompatActivity
 {
+
+    public final static int ID = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -28,40 +31,26 @@ public class Question2 extends AppCompatActivity
         Button w_wielkopolsce = (Button) findViewById(R.id.w_wielkopolsce_btn);
         Button w_walbrzychu = (Button) findViewById(R.id.w_walbrzychu_btn);
 
-        w_okolicach_malborka.setOnClickListener(new View.OnClickListener()
+        if(State.zaznaczone[ID] != null){
+            Button zaznaczony = (Button)findViewById(State.zaznaczone[ID]);
+            zaznaczony.setBackgroundColor(Color.RED);
+            w_walbrzychu.setTextColor(Color.GREEN);
+        }
+        View.OnClickListener clickListener = new View.OnClickListener()
 
         {
-            public void onClick(View arg0) {
-
+            public void onClick(View v) {
+                State.zaznaczone[ID]=v.getId();
                 Intent intent = new Intent(context, Question3.class);
                 startActivity(intent);
 
             }
 
-        });
+        };
 
-        w_wielkopolsce.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View v) {
-                Intent intent2 = new Intent(context, Question3.class);
-                startActivity(intent2);
-
-            }
-        });
-
-
-        w_walbrzychu.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(context, Question3.class);
-                startActivity(intent3);
-
-            }
-        });
+        w_okolicach_malborka.setOnClickListener(clickListener);
+        w_wielkopolsce.setOnClickListener(clickListener);
+        w_walbrzychu.setOnClickListener(clickListener);
     }
 
 }

@@ -30,7 +30,7 @@ public class Start_Analize extends AppCompatActivity
         {
             public void onClick(View arg0) {
 
-                Intent intent = new Intent(context, Question_1_Analize.class);
+                Intent intent = new Intent(context, Question1.class);
                 startActivity(intent);
 
             }
