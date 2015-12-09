@@ -83,38 +83,18 @@
         android:textStyle="bold" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
         android:text="Nastepna odpowiedz"
         android:id="@+id/nastepna_odp_btn"
         android:textStyle="bold"
         android:background="#dd5375"
         android:gravity="center"
-        android:textSize="12dp"
-        android:paddingLeft="12dp"
+        android:textSize="10sp"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/imageView2_am6" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="wybrana"
-        android:id="@+id/wybrana"
-        android:layout_alignBottom="@+id/zamek_czocha_btn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="false"
-        android:layout_above="@+id/zamek_czocha_btn"
-        android:layout_alignRight="@+id/Question_am6"
-        android:visibility="visible"
-        android:width="50dp"
-        android:textStyle="bold"
-        android:textSize="15dp"
-        android:textColor="#e81414"
-        android:singleLine="false"
-        android:nestedScrollingEnabled="false"
-        android:inputType="text"
-        android:focusableInTouchMode="true" />
+        android:layout_alignEnd="@+id/imageView2_am6"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"/>
 
 
 </RelativeLayout>

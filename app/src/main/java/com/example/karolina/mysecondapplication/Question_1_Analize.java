@@ -24,14 +24,19 @@ public class Question_1_Analize extends AppCompatActivity {
 
         final Context context = this;
 
+        Button zamek_czocha = (Button) findViewById(R.id.zamek_czocha_btn);
+
+        zamek_czocha.setTextColor(0xffffff00);
+
+        Button zamek_ksiaz = (Button) findViewById(R.id.zamek_ksiaz_btn);
+
+        zamek_ksiaz.setTextColor(0xff0000ff);
 
         Button next_odp = (Button) findViewById(R.id.nastepna_odp_btn);
 
         Button good_answer = (Button) findViewById(R.id.palac_moszna_btn);
 
         good_answer.getBackground().setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
-
-        
 
 
 
