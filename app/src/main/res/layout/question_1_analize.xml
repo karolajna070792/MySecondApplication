@@ -89,12 +89,12 @@
         android:id="@+id/nastepna_odp_btn"
         android:textStyle="bold"
         android:background="#dd5375"
-        android:gravity="center"
         android:textSize="10sp"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/imageView2_am6"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:maxWidth="5dp" />
 
 
 </RelativeLayout>
