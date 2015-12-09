@@ -2,12 +2,16 @@ package com.example.karolina.mysecondapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Question_1_Analize extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +24,16 @@ public class Question_1_Analize extends AppCompatActivity {
 
         final Context context = this;
 
+
         Button next_odp = (Button) findViewById(R.id.nastepna_odp_btn);
+
+        Button good_answer = (Button) findViewById(R.id.palac_moszna_btn);
+
+        good_answer.getBackground().setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
+
+        
+
+
 
         next_odp.setOnClickListener(new View.OnClickListener()
 
