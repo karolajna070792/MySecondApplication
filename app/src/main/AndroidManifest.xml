@@ -26,12 +26,6 @@
         </activity>
         <activity android:name=".Start_Analize" >
         </activity>
-        <activity android:name=".Question_1_Analize" >
-        </activity>
-        <activity android:name=".Question_2_Analize" >
-        </activity>
-        <activity android:name=".Question_3_Analize" >
-        </activity>
     </application>
 
 </manifest>
